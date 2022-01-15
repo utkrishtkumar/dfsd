@@ -1,0 +1,235 @@
+
+<!------ Include the above in your HEAD tag ---------->
+{% load static %}
+<html lang="en">
+<head>
+<meta name="propeller" content="381f8fe56701f9800ad75db128dcbfc8">
+<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',4586090,document.body||document.documentElement)</script>
+<style>
+
+
+
+
+
+
+
+
+
+
+.button1:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 30%;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+    { margin: 0; padding: 0; }
+
+    body { 
+        background: url("{% static 'admin/img/moto.jpg' %}"); 
+        background-size: cover;
+    }
+    .button1 {
+  background-color: #FFFF; /* Green */
+  border-radius:12px;
+  color: black;
+  padding: 9px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  outline: 0;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  border-style:none;
+  left: 45%;
+  transform: translateY(-50%);
+}
+
+  .ultimate {
+  text-color:yellow;
+  transform: translateY(20%);
+  margin: auto;
+  position: relative:;
+  font-size: 104px;
+  }
+</style>
+  <title>GM Marathon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+$('.navbar-light .dmenu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+    });
+});
+</script>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
+</head>
+  <body>
+<style>
+.social-part .fa{
+    padding-right:20px;
+}
+ul li a{
+    margin-right: 20px;
+}
+
+</style>
+    <nav class="navbar navbar-expand-sm   navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown dmenu">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Race Categories
+            </a>
+            <div class="dropdown-menu sm-menu">
+              <a class="dropdown-item" href="#">Marathon</a>
+              <a class="dropdown-item" href="#">Half Marathon</a>
+              <a class="dropdown-item" href="#">10k</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Call</a>
+          </li>
+           <!-- <li class="nav-item dropdown dmenu">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu sm-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+              <a class="dropdown-item" href="#">Link 4</a>
+              <a class="dropdown-item" href="#">Link 5</a>
+              <a class="dropdown-item" href="#">Link 6</a>
+            </div>
+          </li> -->
+          </ul>
+          <div class="social-part">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+        </div>
+      </nav>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+$('.navbar-light .dmenu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+    });
+});
+</script>
+
+
+
+<div class="box">
+	
+<a class = "button1" href="#popup1"> Login/Register </a>
+
+</div>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Note</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			Due to Covid-19, the race will be postponed to January 5, 2022. The race details, including prize money will be updated soon.
+		</div>
+	</div>
+</div>
+
+
+
+<b><center><h1 class="ultimate" style="color: black;"> GM Marathon Gurugram</h1></center></b>
+
+</body>
+</html>
